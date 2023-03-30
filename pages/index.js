@@ -11,14 +11,10 @@ export default function Home() {
 
   const [data, setData] = useState(null);
 
-   useEffect(() => {
+  useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'https://rest-country-api.p.rapidapi.com/usa',
-      headers: {
-        'X-RapidAPI-Key': process.env.API_KEY,
-        'X-RapidAPI-Host': process.env.API_HOST,
-      }
+      url: 'https://mango-glacier-0656f1b0f.2.azurestaticapps.net/api/enpull',
     };
     axios.request(options).then(function (response) {
       setData(response.data);
@@ -26,6 +22,8 @@ export default function Home() {
       console.error(error);
     });
   }, []);
+
+
 
   return (
     <>
@@ -51,4 +49,5 @@ export default function Home() {
     </>
   )
 }
+
 
