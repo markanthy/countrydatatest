@@ -293,3 +293,8 @@
   text-transform: uppercase;
   color: bisque;
 }
+
+.sectiontitle {
+  font-size: 30px;
+  align-items: center;
+}
