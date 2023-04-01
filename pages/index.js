@@ -37,12 +37,14 @@ export default function Home() {
         <div>
           {data && (
             <>
-              <div className={styles.csect}></div>
+              
               <p className={styles.country}> {data.name.official}</p>
+              <div className={styles.csect}>
               <p>Population: {data.population}</p>
               <p>Capital: {data.capital}</p>
               <p>Language: {data.languages.eng}</p>
               <p>Currency: {data.currencies.USD.name}</p>
+              </div>
             </>
           )}
         </div>
