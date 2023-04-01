@@ -34,12 +34,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.sectiontitle}>Dat geography doe</div>
         <div>
           {data && (
             <>
-              
+              <div className={styles.csect}></div>
               <p className={styles.country}> {data.name.official}</p>
+              <p>Population: {data.population}</p>
               <p>Capital: {data.capital}</p>
               <p>Language: {data.languages.eng}</p>
               <p>Currency: {data.currencies.USD.name}</p>
